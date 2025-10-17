@@ -1,3 +1,6 @@
 [submodule "templates/barbershop-templates"]
 	path = templates/barbershop-templates
 	url = git@github.com:BTY-Technology/barbershop-templates.git
+[submodule "templates/restaurant-templates"]
+	path = templates/restaurant-templates
+	url = git@github.com:BTY-Technology/restaurant-templates.git
