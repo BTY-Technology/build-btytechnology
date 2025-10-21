@@ -106,6 +106,19 @@ const nextConfig = {
   compiler: {
     removeConsole: process.env.NODE_ENV === 'production',
   },
+  async headers() {
+    return [
+      {
+        source: '/:path*',
+        headers: [
+          {
+            key: 'X-Frame-Options',
+            value: 'ALLOWALL',
+          },
+        ],
+      },
+    ]
+  },
 }
 
 module.exports = nextConfig
@@ -349,10 +362,51 @@ This project is licensed under the MIT License.
 Built with ❤️ by BTY Technology
 EOF
 
+# Extract category slug (remove -templates suffix if present)
+CATEGORY_SLUG=$(echo "$CATEGORY" | sed 's/-templates$//')
+
+# Create template.json with subdomain URL
+cat > "$TEMPLATE_PATH/template.json" << EOF
+{
+  "id": "${CATEGORY_SLUG}-${TEMPLATE_NUM}",
+  "name": "Template ${TEMPLATE_NUM}",
+  "category": "${CATEGORY_SLUG}",
+  "description": "A modern, fully-responsive website template.",
+  "version": "1.0.0",
+  "featured": false,
+  "preview": {
+    "thumbnail": "/previews/${CATEGORY_SLUG}-${TEMPLATE_NUM}/thumbnail.jpg",
+    "screenshots": [],
+    "demoUrl": "https://${CATEGORY_SLUG}-${TEMPLATE_NUM}.website.btytechnology.com"
+  },
+  "features": [
+    "Responsive mobile design",
+    "SEO optimized",
+    "Modern design"
+  ],
+  "techStack": [
+    "Next.js 14",
+    "TypeScript",
+    "Tailwind CSS"
+  ],
+  "colors": {
+    "primary": "#1a1a1a",
+    "secondary": "#f5f5f5",
+    "accent": "#d4af37"
+  },
+  "pages": [
+    "Home"
+  ]
+}
+EOF
+
 echo -e "${GREEN}✓ Template created successfully!${NC}"
 echo -e "${GREEN}✓ Location: ${TEMPLATE_PATH}${NC}"
+echo -e "${GREEN}✓ Preview URL: https://${CATEGORY_SLUG}-${TEMPLATE_NUM}.website.btytechnology.com${NC}"
 echo ""
 echo "Next steps:"
 echo "  1. cd ${TEMPLATE_PATH}"
 echo "  2. Install dependencies: npm install (or bun install)"
-echo "  3. Start customizing your template!"
+echo "  3. Customize template.json with proper name, description, and features"
+echo "  4. Deploy to Vercel and configure custom domain: ${CATEGORY_SLUG}-${TEMPLATE_NUM}.website.btytechnology.com"
+echo "  5. Run 'npm run discover' from project root to update the gallery"

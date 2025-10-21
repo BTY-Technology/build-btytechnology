@@ -1,0 +1,35 @@
+{
+  "name": "build-btytechnology",
+  "version": "1.0.0",
+  "description": "BTY Technology Template Showcase Platform",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "npm run discover && next build",
+    "start": "next start",
+    "lint": "next lint",
+    "discover": "node scripts/discover-templates.js"
+  },
+  "dependencies": {
+    "next": "^14.2.0",
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0",
+    "framer-motion": "^11.0.0",
+    "clsx": "^2.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "typescript": "^5.4.0",
+    "tailwindcss": "^3.4.0",
+    "postcss": "^8.4.0",
+    "autoprefixer": "^10.4.0",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^14.2.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  }
+}
