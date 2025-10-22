@@ -101,15 +101,6 @@ The auto-discovery system:
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/)
 - **Animations**: [Framer Motion](https://www.framer.com/motion/)
 
-## BTY Technology Branding
-
-The site features BTY Technology's brand colors:
-- **Dark Theme**: `#0a0a0a` (background)
-- **Charcoal**: `#1a1a1a` (cards)
-- **Accent Red**: `#ef4444`
-- **Accent Green**: `#10b981`
-- **Accent Warm**: `#f59e0b`
-
 ## License
 
 MIT License - Built with ❤️ by BTY Technology
