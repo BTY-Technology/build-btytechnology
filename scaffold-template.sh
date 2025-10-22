@@ -70,6 +70,9 @@ mkdir -p "$TEMPLATE_PATH/public"
 mkdir -p "$TEMPLATE_PATH/types"
 mkdir -p "$TEMPLATE_PATH/utils"
 
+# Place BTY Tech Logo's in public directory
+cp -r ./public/* "$TEMPLATE_PATH/public"
+
 # Create package.json (minimal/empty structure)
 cat > "$TEMPLATE_PATH/package.json" << 'EOF'
 {
