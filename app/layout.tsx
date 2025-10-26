@@ -28,9 +28,9 @@ export const metadata: Metadata = {
   creator: "BTY Technology",
   publisher: "BTY Technology",
   icons: {
-    icon: "/btyfavi.png",
-    shortcut: "/btyfavi.png",
-    apple: "/btyfavi.png",
+    icon: "/btyfavi.ico",
+    shortcut: "/btyfavi.ico",
+    apple: "/btyfavi.ico",
   },
   openGraph: {
     type: "website",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
       "Browse professional, modern website templates built by BTY Technology. Better Than Yesterday.",
     images: [
       {
-        url: "/btyfavi.png",
+        url: "/btyfavi.ico",
         width: 1200,
         height: 630,
         alt: "BTY Technology Website Templates",
