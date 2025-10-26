@@ -216,6 +216,14 @@ export default function Header() {
       {mobileMenuOpen && (
         <div className="md:hidden absolute top-full left-0 right-0 bg-white dark:bg-neutral-950 border-b border-border/30 backdrop-blur-xl">
           <nav className="container mx-auto py-4 px-4 flex flex-col space-y-2">
+            <a
+              href="https://btytechnology.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-muted-foreground hover:text-foreground transition-colors px-4 py-2 rounded-md"
+            >
+              MAIN
+            </a>
             <Link
               href="/browse"
               onClick={() => setMobileMenuOpen(false)}
@@ -224,7 +232,7 @@ export default function Header() {
               WEBSITES
             </Link>
             <a
-              href="https://btytechnology.com"
+              href="https://btytechnology.com/resources/about"
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm text-muted-foreground hover:text-foreground transition-colors px-4 py-2 rounded-md"
