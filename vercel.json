@@ -1,0 +1,13 @@
+{
+  "buildCommand": "git submodule update --init --recursive && bun build",
+  "devCommand": "bun dev",
+  "installCommand": "bun install",
+  "env": {
+    "GIT_DEPTH": "0"
+  },
+  "git": {
+    "deploymentEnabled": {
+      "main": true
+    }
+  }
+}
