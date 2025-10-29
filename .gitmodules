@@ -4,3 +4,9 @@
 [submodule "templates/restaurant-templates"]
 	path = templates/restaurant-templates
 	url = https://github.com/BTY-Technology/restaurant-templates.git
+[submodule "templates/private-equity-templates"]
+	path = templates/private-equity-templates
+	url = https://github.com/BTY-Technology/private-equity-templates.git
+[submodule "templates/coffee-templates"]
+	path = templates/coffee-templates
+	url = https://github.com/BTY-Technology/coffee-templates.git
