@@ -10,3 +10,6 @@
 [submodule "templates/coffee-templates"]
 	path = templates/coffee-templates
 	url = https://github.com/BTY-Technology/coffee-templates.git
+[submodule "templates/ai-startup-templates"]
+	path = templates/ai-startup-templates
+	url = https://github.com/BTY-Technology/ai-startup-templates.git
