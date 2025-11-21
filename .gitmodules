@@ -13,3 +13,6 @@
 [submodule "templates/ai-startup-templates"]
 	path = templates/ai-startup-templates
 	url = https://github.com/BTY-Technology/ai-startup-templates.git
+[submodule "templates/courses-templates"]
+	path = templates/courses-templates
+	url = https://github.com/BTY-Technology/courses-templates.git
