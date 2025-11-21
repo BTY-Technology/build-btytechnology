@@ -27,7 +27,7 @@ export default function TemplateCard({
               style={{ paddingTop: "75%" }}
             >
               <img
-                src={`https://v1.screenshot.11ty.dev/${encodeURIComponent(template.preview.demoUrl)}/medium/1:1/_wait:3/`}
+                src={`https://v1.screenshot.11ty.dev/${encodeURIComponent(template.preview.demoUrl)}/medium/1:1/_wait:3/_timeout:9`}
                 alt={`Preview of ${template.name}`}
                 className="absolute inset-0 w-full h-full object-cover"
               />
